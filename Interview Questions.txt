@@ -1,0 +1,72 @@
+1. What are the different types of missing data?
+Ans: There are three types:
+
+1.MCAR (Missing Completely At Random): The missingness has no pattern or relation to any data.
+2.MAR (Missing At Random): Missingness is related to observed data but not the missing data itself.
+3.MNAR (Missing Not At Random): The missingness is related to the missing value itself.
+
+
+2. How do you handle categorical variables?
+Ans: Categorical variables can be handled by:
+
+1.Label Encoding for ordinal data (e.g., "low", "medium", "high").
+2.One-Hot Encoding for nominal data (e.g., "red", "blue", "green").
+3.Target Encoding or Frequency Encoding in some advanced cases.
+
+
+3. What is the difference between normalization and standardization?
+
+Ans: Normalization (Min-Max Scaling) scales data to a [0,1] range.
+Standardization (Z-score scaling) transforms data to have a mean of 0 and standard deviation of 1.
+Use normalization when data doesn’t follow a normal distribution; standardization when it does.
+
+
+4. How do you detect outliers?
+Ans: Outliers can be detected using:
+
+1.Statistical methods (e.g., Z-score, IQR).
+2.Visualization techniques (box plots, scatter plots).
+3.Model-based methods (e.g., Isolation Forest, DBSCAN).
+
+
+5. Why is preprocessing important in ML?
+Ans: Preprocessing ensures:
+
+1.Data quality and consistency.
+2.Improved model performance.
+3.Better generalization and reduced noise.
+4.Accurate handling of missing values, outliers, and feature scaling.
+
+
+6. What is one-hot encoding vs label encoding?
+
+Ans: One-Hot Encoding: Converts categories into multiple binary columns (useful for non-ordinal data).
+Label Encoding: Assigns each category a unique integer (works for ordinal data but may mislead models if applied to nominal data).
+
+
+
+7. How do you handle data imbalance?
+Ans: Handling techniques include:
+
+1.Resampling: Oversampling (e.g., SMOTE) or undersampling.
+2.Using different metrics: Precision, recall, F1-score instead of accuracy.
+3.Algorithmic approaches: Use models like XGBoost that handle imbalance well.
+4.Class weights: Adjust weights in the model’s loss function.
+
+
+8. Can preprocessing affect model accuracy?
+Ans: Yes, greatly. Good preprocessing:
+
+1.Removes irrelevant noise.
+2.Enhances signal in the data.
+3.Ensures features are on the right scale.
+4.Helps models learn patterns effectively.
+
+
+
+
+
+
+
+
+
